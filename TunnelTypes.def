@@ -1,0 +1,15 @@
+1	None of the following|other
+2	No intermediate header|direct
+3	GRE encapsulation|gre
+4	Minimal encapsulation|minimal
+5	L2TP encapsulation|l2tp
+6	PPTP encapsulation|pptp
+7	L2F encapsulation|l2f
+8	UDP encapsulation|udp
+9	ATMP encapsulation|atmp
+10	MSDP encapsulation|msdp
+11	6to4 encapsulation|sixToFour
+12	6over4 encapsulation|sixOverFour
+13	ISATAP encapsulation|isatap
+14	Teredo encapsulation|teredo
+15	IPHTTPS|ipHttps
