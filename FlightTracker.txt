@@ -1,0 +1,125 @@
+Flight Tracker (version 1.00.17)
+Developed by Jean-Fabien Connault (devonic@orange.fr)
+Copyright (c) 2008-2023 Devonic
+
+[https://cycocrew.github.io/delphi/]
+
+This application is designed for Windows Vista/7/8/8.1/10/11
+and allows you to manage airline flights. This includes management of flights, airlines,
+airports and distances.
+
+The following web sites can be used to calculate distances between two airports.
+
+[http://www.convertunits.com/distance/]
+[http://www.webflyer.com/travel/milemarker/]
+
+Installation :
+
+- Execute the application setup executable.
+- Launch the 'Flight Tracker' program from the 'Devonic' program group.
+
+Changes since version 1.00.16 :
+
+o Updated OpenSSL version from 1.1.1l to 1.1.1t.
+o Cosmetic changes.
+
+Changes since version 1.00.15 :
+
+o Updated OpenSSL version from 1.1.1h to 1.1.1l.
+o Cosmetic changes.
+o Recompiled with Embarcadero Delphi 11 Alexandria.
+
+Changes since version 1.00.14 :
+
+o Updated OpenSSL version from 1.0.2t to 1.1.1h.
+o Cosmetic changes.
+o Recompiled with Embarcadero Delphi 10.4 Sydney.
+
+Changes since version 1.00.13 :
+
++ Added ability to update application using HTTPS (leveraging OpenSSL).
++ Added distribution of OpenSSL version 1.0.2t.
+o Cosmetic changes.
+
+Changes since version 1.00.12 :
+
+o Cosmetic changes.
+o Recompiled with Embarcadero Delphi 10.3 Rio.
+
+Changes since version 1.00.11 :
+
+o Cosmetic changes.
+o Recompiled with Embarcadero Delphi 10.1 Berlin.
+
+Changes since version 1.00.10 :
+
++ Added Windows 10 support.
+o Cosmetic changes.
+o Updated AIRPORTS.DEF file.
+
+Changes since version 1.00.09 :
+
+o Cosmetic changes.
+o Recompiled with Embarcadero Delphi XE5.
+o Updated AIRLINES.DEF file.
+o Updated COUNTRIES.DEF file.
+
+Changes since version 1.00.08 :
+
+o Cosmetic changes.
+o Updated COUNTRIES.DEF file.
+
+Changes since version 1.00.07 :
+
++ Added ability to derive flight.
++ Added ability to swap "From" and "To" fields while editing flights.
+o Cosmetic changes.
+
+Changes since version 1.00.06 :
+
+o Cosmetic changes.
+
+Changes since version 1.00.05 :
+
+o Recompiled with Embarcadero Delphi 2010 (Update 4/5).
+o Cosmetic changes.
+
+Changes since version 1.00.04 :
+
+o Added 'Information Provider' selection on 'Advanced' tab of 'Options' window.
+o Added 'Airline Information' right-click menu item on 'Airlines' view.
+o Added 'Airport Information' right-click menu item on 'Airports' view.
++ Added 'Locate|Airline', 'Locate|Airport|From', 'Locate|Airport|To'
+  and 'Locate|Distance' popup menuitems on 'Flights' tab.
+o Recompiled with Embarcadero Delphi 2010 (Update 1).
+o Cosmetic changes.
+o Updated AIRPORTS.DEF file.
+
+Changes since version 1.00.03 :
+
+o Cosmetic changes.
+
+Changes since version 1.00.02 :
+
+o Recompiled with CodeGear Delphi 2009 (Update 1).
+o Cosmetic changes.
+
+Changes since version 1.00.01 :
+
+o Added 'Advanced' tab on 'Options' window.
+o Added 'Distance Calculator' selection on 'Advanced' tab of 'Options' window.
+o Added 'Distance Calculator' right-click menu item on 'Distances' view.
+o Redesigned 'Statistics' window.
+o Cosmetic changes.
+
+Changes since version 1.00.00 :
+
+o Cosmetic changes.
+o Updated AIRPORTS.DEF file.
+o Updated COUNTRIES.DEF file.
+
+Legend :
+
++ New feature
+o Minor change
+! Bug fix

@@ -1,0 +1,7 @@
+[FlightTracker]
+DownloadFileURL=https://raw.githubusercontent.com/cycocrew/delphi/main/FlightTracker-1.00.17-Setup.exe
+ReadmeFileURL=https://raw.githubusercontent.com/cycocrew/delphi/main/FlightTracker.txt
+DownloadFileURL64=https://raw.githubusercontent.com/cycocrew/delphi/main/FlightTracker-1.00.17-Setup64.exe
+ReadmeFileURL64=https://raw.githubusercontent.com/cycocrew/delphi/main/FlightTracker.txt
+UpdatePageURL=https://cycocrew.github.io/delphi/
+Version=1.00.17
