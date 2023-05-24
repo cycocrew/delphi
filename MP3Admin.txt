@@ -1,0 +1,241 @@
+MP3 Administration Module (version 1.00.31)
+Developed by Jean-Fabien Connault (devonic@orange.fr)
+Copyright (c) 2004-2023 Devonic
+
+[https://cycocrew.github.io/devonic/]
+
+This application is designed for Windows Vista/7/8/8.1/10/11
+and allows you to manage MP3 files.
+
+Installation :
+
+- Execute the application setup executable.
+- Launch the 'MP3 Administration Module' program from
+  the 'Devonic' program group.
+
+Changes since version 1.00.30 :
+
+o Cosmetic changes.
+o Updated MP3ARTISTEXCEPTIONS.DEF file.
+
+Changes since version 1.00.29 :
+
+o Updated OpenSSL version from 1.1.1s to 1.1.1t.
+o Cosmetic changes.
+
+Changes since version 1.00.28 :
+
+o Updated OpenSSL version from 1.1.1n to 1.1.1s.
+o Cosmetic changes.
+o Updated MP3ARTISTEXCEPTIONS.DEF file.
+
+Changes since version 1.00.27 :
+
+o Updated OpenSSL version from 1.1.1m to 1.1.1n.
+o Cosmetic changes.
+o Updated MP3ARTISTEXCEPTIONS.DEF file.
+
+Changes since version 1.00.26 :
+
+o Enhanced support for Artist name exceptions.
+o Updated OpenSSL version from 1.1.1l to 1.1.1m.
+o Cosmetic changes.
+o Updated MP3ARTISTEXCEPTIONS.DEF file.
+
+Changes since version 1.00.25 :
+
+o Updated OpenSSL version from 1.1.1h to 1.1.1l.
+o Cosmetic changes.
+o Recompiled with Embarcadero Delphi 11 Alexandria.
+
+Changes since version 1.00.24 :
+
+o Updated OpenSSL version from 1.0.2t to 1.1.1h.
+o Cosmetic changes.
+o Recompiled with Embarcadero Delphi 10.4 Sydney.
+
+Changes since version 1.00.23 :
+
++ Added ability to retrieve data files using HTTPS (leveraging OpenSSL).
++ Added distribution of OpenSSL version 1.0.2t.
+o Refactored code.
+o Cosmetic changes.
+
+Changes since version 1.00.22 :
+
+o Using SHA256 instead of MD5 during file hashing.
+o Cosmetic changes.
+o Recompiled with Embarcadero Delphi 10.3 Rio.
+o Updated MP3ARTISTEXCEPTIONS.DEF file.
+
+Changes since version 1.00.21 :
+
+o Cosmetic changes.
+o Recompiled with Embarcadero Delphi 10.1 Berlin.
+o Updated MP3ARTISTEXCEPTIONS.DEF file.
+
+Changes since version 1.00.20 :
+
++ Added support for Artist name exceptions containing '//' string.
++ Added Windows 10 support.
+o Enhanced track number extraction.
+o Enhanced error reporting when updating data files.
+o Cosmetic changes.
+o Recompiled with Embarcadero Delphi XE5.
+o Updated MP3ARTISTEXCEPTIONS.DEF file.
+
+Changes since version 1.00.19 :
+
++ Added 'Move featurings from title to comments' checkbox on the 'Preferences' tab
+  of the 'Options' window.
+o Cosmetic changes.
+o Updated MP3ARTISTEXCEPTIONS.DEF file.
+
+Changes since version 1.00.18 :
+
++ Added 'Statistics' view.
++ Added 'Clean attributes during reading process' checkbox on the 'Preferences' tab
+  of the 'Options' window.
++ Added ability to export to CSV file.
+o Cosmetic changes.
+
+Changes since version 1.00.18 :
+
++ Added ability to update data files.
++ Added 'Update Data Files' tab on 'Options' view.
++ Added ability to lowercase title.
++ Added MP3tag integration.
+o Moved 'Music libray home path' editbox from the 'Integration' tab
+  to the 'Advanced' tab of the 'Options' window.
+o Cosmetic changes.
+
+Changes since version 1.00.17 :
+
+o Cosmetic changes.
+o Updated MP3ARTISTEXCEPTIONS.DEF file.
+
+Changes since version 1.00.16 :
+
++ Added ability to replace [] by () in title.
++ Added distribution of MP3ARTISTEXCEPTIONS.DEF file.
+o Relocated MP3GENRES.DEF file.
+o Cosmetic changes.
+
+Changes since version 1.00.15 :
+
+o Cosmetic changes.
+
+Changes since version 1.00.14 :
+
++ Added MP3val integration.
++ Added MP3Gain integration.
++ Added 'Learn From Data File' checkbox on the 'Genres' tab of the 'Options' window.
+o Recompiled with Embarcadero Delphi 2010.
+o Cosmetic changes.
+! Fixed non-default genres setting.
+
+Changes since version 1.00.13 :
+
++ Added ability to embed cover art in MP3 files.
++ Added 'Music libray home path' editbox on the 'Music Library' tab of
+  the 'Options' window.
++ Added 'Embed cover art during fixing process' checkbox on the 'Preferences' tab of
+  the 'Options' window.
++ Added built-in properties view.
+o Recompiled with CodeGear Delphi 2009 (Update 2).
+o Cosmetic changes.
+
+Changes since version 1.00.12 :
+
++ Added 'Force fix state to enabled' checkbox on the 'Preferences' tab of the 'Options' window.
+o MP3 ID3v1 tags are now modified when fixing files.
+o Cosmetic changes.
+! Fixed comments extraction when multiple comments are stored in MP3 ID3v2 tags.
+! Fixed duration in extended M3U format exported files.
+
+Changes since version 1.00.11 :
+
++ Added 'Export playlist using extended M3U format' checkbox on the 'Advanced' tab
+  of the 'Options' window.
++ Added 'Export playlist using absolute path (instead of relative)' checkbox on
+  the 'Advanced' tab of the 'Options' window.
+o Enhanced MP3 ID3v1 and ID3v2 tags support.
+o Recompiled with CodeGear Delphi 2009 (Update 1).
+o Cosmetic changes.
+
+Changes since version 1.00.10 :
+
++ Added 'IE' button on the 'Update' tab of the 'Options' window.
++ Added 'Default' button on the 'Genres' tab of the 'Options' window.
++ Added 'Default' button on the 'Suffixes' tab of the 'Options' window.
+o Added GENRES.DEF file.
+o Cosmetic changes.
+
+Changes since version 1.00.09 :
+
+o Enhanced MP3 Name Computing logic.
+o Cosmetic changes.
+
+Changes since version 1.00.08 :
+
++ Added 'Folded' and 'Mixed' modes to 'MP3 Name Computing' option.
+o Moved 'MP3 Name Computing' option to new 'MP3 Name' tab on the 'Options' window.
+o Updated 'Expanded MP3 Name Computing' logic to be more flexible.
+o Cosmetic changes.
+o Recompiled with CodeGear Delphi 2007 for Win32 (December 2007 Update).
+
+Changes since version 1.00.07 :
+
++ Added ability to edit 'Genres' and 'Suffixes' on the 'Options' window.
++ Added 'Suffixes' checklistbox on the 'Options' window.
+o Updated 'Expanded MP3 Name Computing' logic to be more flexible.
+o Cosmetic changes.
+o Recompiled with CodeGear Delphi 2007 for Win32 Update 3.
+
+Changes since version 1.00.06 :
+
+o Cosmetic changes.
+o Recompiled with CodeGear Delphi 2007 for Win32.
+
+Changes since version 1.00.05 :
+
++ Added ability to open simple and extended M3U playlists.
+o Removed drive letter from file path in exported M3U playlists.
+o Cosmetic changes.
+! Fixed refresh mismatch calculation.
+
+Changes since version 1.00.04 :
+
++ Added 'Preserve file date/time' checkbox on the 'Options' window.
+o Cosmetic changes.
+
+Changes since version 1.00.03 :
+
++ Added ability to set genre.
++ Added 'Genres' checklistbox on the 'Options' window.
+o Cosmetic changes.
+! Fixed item refresh when right-clicking.
+
+Changes since version 1.00.02 :
+
++ Added 'Format title during fixing process' checkbox on the 'Options' window.
++ Added ability to export as extended M3U playlist.
++ Added global refresh feature.
+o Cosmetic changes.
+
+Changes since version 1.00.01 :
+
++ Added track number retrieval from track name.
++ Added ability to clear track number.
+o Cosmetic changes.
+
+Changes since version 1.00.00 :
+
++ Added 'MP3 Name Computing' groupbox on the 'Options' window.
+o Cosmetic changes.
+
+Legend :
+
++ New feature
+o Minor change
+! Bug fix
