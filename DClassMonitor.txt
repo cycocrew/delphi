@@ -1,0 +1,76 @@
+Delphi Class Monitor (version 1.00.09)
+Developed by Jean-Fabien Connault (devonic@orange.fr)
+Copyright (c) 2008-2023 Devonic
+
+[https://cycocrew.github.io/devonic/]
+
+This application is designed for Windows Vista/7/8/8.1/10
+and allows you to monitor Embarcadero Delphi classes.
+
+The following web site contains useful information about memory leak detection.
+
+[http://delphi.about.com/od/kbcurt/a/dynamiccreation.htm]
+[http://delphi.about.com/od/adptips2005/qt/nilselfapp.htm]
+
+Installation :
+
+- Execute the application setup executable.
+- Launch the 'Delphi Class Monitor' program from
+  the 'Devonic' program group.
+
+Changes since version 1.00.08 :
+
+o Updated OpenSSL version from 1.1.1l to 1.1.1u.
+o Cosmetic changes.
+
+Changes since version 1.00.07 :
+
+o Updated OpenSSL version from 1.1.1h to 1.1.1l.
+o Cosmetic changes.
+o Recompiled with Embarcadero Delphi 11 Alexandria.
+
+Changes since version 1.00.06 :
+
++ Added 'Free Out Of Context' support.
++ Added 'TFormatSettings' and 'TXMLDocument' classes to the ignore memory leak list.
+o Updated OpenSSL version from 1.0.2t to 1.1.1h.
+o Cosmetic changes.
+o Recompiled with Embarcadero Delphi 10.4 Sydney.
+! Fixed internal editor auto scrolling.
+
+Changes since version 1.00.05 :
+
++ Added ability to update application using HTTPS (leveraging OpenSSL).
++ Added distribution of OpenSSL version 1.0.2t.
+o Cosmetic changes.
+
+Changes since version 1.00.04 :
+
+o Cosmetic changes.
+o Recompiled with Embarcadero Delphi 10.3 Rio.
+
+Changes since version 1.00.03 :
+
+o Cosmetic changes.
+o Recompiled with Embarcadero Delphi 10.1 Berlin.
+
+Changes since version 1.00.02 :
+
++ Added Windows 10 support.
+o Cosmetic changes.
+o Recompiled with Embarcadero Delphi XE5.
+
+Changes since version 1.00.01 :
+
+o Cosmetic changes.
+
+Changes since version 1.00.00 :
+
+o Cosmetic changes.
+o Recompiled with Embarcadero Delphi 2010.
+
+Legend :
+
++ New feature
+o Minor change
+! Bug fix

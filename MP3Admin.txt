@@ -15,6 +15,7 @@ Installation :
 
 Changes since version 1.00.30 :
 
+o Updated OpenSSL version from 1.1.1t to 1.1.1u.
 o Cosmetic changes.
 o Updated MP3ARTISTEXCEPTIONS.DEF file.
 

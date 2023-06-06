@@ -1,0 +1,403 @@
+DEF File Editor (version 1.01.03)
+Developed by Jean-Fabien Connault (devonic@orange.fr)
+Copyright (c) 2009-2023 Devonic
+
+[https://cycocrew.github.io/devonic/]
+
+This application is designed for Windows Vista/7/8/8.1/10/11
+and allows you to manipulate DEF files (*.def).
+
+DEF stands for "DEFinition".
+
+DEF files are data files implementing the following format for each item:
+
+Value<TAB>Description<"|">Keyword
+
+"Value" and "Description" fields are separated by a <TAB> (tabulation)
+"Description" and "Keyword" fields are separated by a <"|"> ("|" char)
+"Description" and "Keyword" fields may be optional
+Items prefixed with the "#" char are considered as commented
+
+This application uses the VENDORS.DEF file for networking vendors (MA-L)
+MAC addresses identification. This file is generated based on the OUI.CSV
+file from the IEEE (Institute of Electrical and Electronics Engineers).
+
+[https://standards-oui.ieee.org/oui/oui.csv]
+
+This application uses the IABVENDORS.DEF file for networking vendors (IAB)
+MAC addresses identification. This file is generated based on the IAB.CSV
+file from the IEEE (Institute of Electrical and Electronics Engineers).
+
+[https://standards-oui.ieee.org/iab/iab.csv]
+
+This application uses the MAMVENDORS.DEF file for networking vendors (MA-M)
+MAC addresses identification. This file is generated based on the MAM.CSV
+file from the IEEE (Institute of Electrical and Electronics Engineers).
+
+[https://standards-oui.ieee.org/oui28/mam.csv]
+
+This application uses the MASVENDORS.DEF file for networking vendors (MA-S)
+MAC addresses identification. This file is generated based on the OUI36.CSV
+file from the IEEE (Institute of Electrical and Electronics Engineers).
+
+[https://standards-oui.ieee.org/oui36/oui36.csv]
+
+This application uses the ETHERTYPES.DEF file for ethernet types
+identification. This file is generated based on the ETH.CSV
+file from the IEEE (Institute of Electrical and Electronics Engineers).
+Note that the ETHERTYPES.DEF file is organization/vendor centric.
+
+[https://standards-oui.ieee.org/ethertype/eth.csv]
+
+This application uses the DHCPOPTIONS.DEF file for DHCP options
+identification. This file is generated based on the BOOTP-DHCP-PARAMETERS.TXT
+file from the IANA (Internet Assigned Numbers Authority).
+
+[https://www.iana.org/assignments/bootp-dhcp-parameters/bootp-dhcp-parameters.txt]
+
+This application uses the DHCPv6OPTIONS.DEF file for DHCPv6 options
+identification. This file is generated based on the DHCPv6-PARAMETERS.TXT
+file from the IANA (Internet Assigned Numbers Authority).
+
+[https://www.iana.org/assignments/dhcpv6-parameters/dhcpv6-parameters.txt]
+
+This application uses the ENTERPRISENUMBERS.DEF file for enterprise numbers
+identification. This file is generated based on the ENTERPRISE-NUMBERS
+file from the IANA (Internet Assigned Numbers Authority).
+
+[https://www.iana.org/assignments/enterprise-numbers/enterprise-numbers]
+
+This application uses the ETHERS.DEF file for ethernet numbers
+identification. This file is generated based on the ETHERNET-NUMBERS.TXT
+file from the IANA (Internet Assigned Numbers Authority).
+Note that the ETHERS.DEF file is protocol centric.
+
+[https://www.iana.org/assignments/ethernet-numbers/ethernet-numbers.txt]
+
+This application uses the ICMPTYPES.DEF file for ICMP types
+identification. This file is generated based on the ICMP-PARAMETERS.TXT
+file from the IANA (Internet Assigned Numbers Authority).
+
+[https://www.iana.org/assignments/icmp-parameters/icmp-parameters.txt]
+
+This application uses the ICMPV6TYPES.DEF file for ICMPv6 types
+identification. This file is generated based on the ICMPV6-PARAMETERS.TXT
+file from the IANA (Internet Assigned Numbers Authority).
+
+[https://www.iana.org/assignments/icmpv6-parameters/icmpv6-parameters.txt]
+
+This application uses the INTERFACETYPES.DEF file for Interface types
+identification. This file is generated based on the IANAIFTYPE-MIB
+file from the IANA (Internet Assigned Numbers Authority).
+
+[https://www.iana.org/assignments/ianaiftype-mib/ianaiftype-mib]
+
+This application uses the IPMC.DEF file for IP multicast addresses
+identification. This file is generated based on the MULTICAST-ADDRESSES.TXT
+file from the IANA (Internet Assigned Numbers Authority).
+
+[https://www.iana.org/assignments/multicast-addresses/multicast-addresses.txt]
+
+This application uses the PORTS.DEF file for port numbers
+identification. This file is generated based on the SERVICE-NAMES-PORT-NUMBERS.CSV
+file from the IANA (Internet Assigned Numbers Authority).
+
+[https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.csv]
+
+This application uses the PROTOCOLS.DEF file for protocol numbers
+identification. This file is generated based on the PROTOCOL-NUMBERS.TXT
+file from the IANA (Internet Assigned Numbers Authority).
+
+[https://www.iana.org/assignments/protocol-numbers/protocol-numbers.txt]
+
+This application uses the RADIUSTYPES.DEF file for RADIUS types
+identification. This file is generated based on the RADIUS-TYPES.TXT
+file from the IANA (Internet Assigned Numbers Authority).
+
+[https://www.iana.org/assignments/radius-types/radius-types.txt]
+
+This application uses the COMPANYID.DEF file for company
+identification. This file is generated based on the CID.CSV
+file from the IEEE (Institute of Electrical and Electronics Engineers).
+
+[https://standards-oui.ieee.org/cid/cid.csv]
+
+This application uses the MANUFACTURERID.DEF file for manufacturer
+identification. This file is generated based on the MANID.CSV
+file from the IEEE (Institute of Electrical and Electronics Engineers).
+
+[https://standards-oui.ieee.org/manid/manid.csv]
+
+This application uses the OPERATORID.DEF file for operator
+identification. This file is generated based on the OPID.CSV
+file from the IEEE (Institute of Electrical and Electronics Engineers).
+
+[https://standards-oui.ieee.org/bopid/opid.csv]
+
+This application uses the MACAGES.DEF file for MAC age
+information. This file is generated based on the MAC-AGES.CSV
+file from HD Moore.
+
+[https://raw.githubusercontent.com/hdm/mac-ages/main/data/mac-ages.csv]
+
+This application uses the COMMONPLATFORMENUMERATIONS.DEF file for CPE
+information. This file is generated based on the OFFICIAL-CPE-DICTIONARY_V2.3.XML
+file from NIST (National Institute of Standards and Technology).
+
+[https://nvd.nist.gov/feeds/xml/cpe/dictionary/official-cpe-dictionary_v2.3.xml.zip]
+
+Installation :
+
+- Execute the application setup executable.
+- Launch the 'DEF File Editor' program from the 'Devonic' program group.
+
+Changes since version 1.01.02 :
+
+o Updated OpenSSL version from 1.1.1t to 1.1.1u.
+o Cosmetic changes.
+
+Changes since version 1.01.01 :
+
+o Updated OpenSSL version from 1.1.1s to 1.1.1t.
+o Cosmetic changes.
+
+Changes since version 1.01.00 :
+
+o Enhanced 'Add Item' to detect duplicates and allow to merge.
+o Updated DHCPV6OPTIONS.DEF dynamic update.
+o Updated MACAGES.DEF dynamic update.
+o Updated OPERATORID.DEF dynamic update.
+o Updated RADIUSTYPES.DEF dynamic update.
+o Updated OpenSSL version from 1.1.1n to 1.1.1s.
+o Cosmetic changes.
+! Fixed ability to check duplicate items.
+
+Changes since version 1.00.26 :
+
++ Added ICMPV6TYPES.DEF data file distribution.
++ Added ICMPV6TYPES.DEF dynamic update.
+o Updated OpenSSL version from 1.1.1l to 1.1.1n.
+o Cosmetic changes.
+
+Changes since version 1.00.25 :
+
+o Updated OpenSSL version from 1.1.1k to 1.1.1l.
+o Cosmetic changes.
+o Recompiled with Embarcadero Delphi 11 Alexandria.
+
+Changes since version 1.00.24 :
+
++ Added COMMONPLATFORMENUMERATIONS.DEF data file distribution.
++ Added COMMONPLATFORMENUMERATIONS.DEF dynamic update.
+o Updated OpenSSL version from 1.1.1h to 1.1.1k.
+o Cosmetic changes.
+
+Changes since version 1.00.23 :
+
+o Updated OpenSSL version from 1.0.2u to 1.1.1h.
+o Cosmetic changes.
+o Recompiled with Embarcadero Delphi 10.4 Sydney.
+o Updated DHCPOPTIONS.DEF dynamic update.
+o Updated ETHERS.DEF dynamic update.
+o Updated shipping data files.
+
+Changes since version 1.00.22 :
+
+o Cosmetic changes.
+o Updated IABVENDORS.DEF dynamic update.
+o Updated MAMVENDORS.DEF dynamic update.
+o Updated MASVENDORS.DEF dynamic update.
+o Updated VENDORS.DEF dynamic update.
+o Updated shipping data files.
+
+Changes since version 1.00.21 :
+
+o Cosmetic changes.
+o Updated OPERATORID.DEF dynamic update.
+o Updated shipping data files.
+
+Changes since version 1.00.20 :
+
++ Added ability to copy selected items to clipboard.
++ Added ability to update application using HTTPS (leveraging OpenSSL).
++ Added ability to retrieve data files using HTTPS (leveraging OpenSSL).
++ Added distribution of OpenSSL version 1.0.2t.
++ Added MACAGES.DEF data file distribution.
++ Added MACAGES.DEF dynamic update.
+o Enhanced handling of '|' character in 'Description' field.
+o Opened file encoding is now preserved when saving file.
+o Refactored code.
+o Cosmetic changes.
+o Updated shipping data files.
+
+Changes since version 1.00.19 :
+
+o Using SHA256 instead of MD5 during file hashing.
+o Updated IEEE links.
+o Cosmetic changes.
+o Recompiled with Embarcadero Delphi 10.3 Rio.
+o Updated IABVENDORS.DEF dynamic update.
+o Updated MAMVENDORS.DEF dynamic update.
+o Updated MASVENDORS.DEF dynamic update.
+o Updated VENDORS.DEF dynamic update.
+o Updated shipping data files.
+
+Changes since version 1.00.18 :
+
+o Cosmetic changes.
+o Updated INTERFACETYPES.DEF dynamic update.
+o Updated shipping data files.
+
+Changes since version 1.00.17 :
+
+o Cosmetic changes.
+o Recompiled with Embarcadero Delphi 10.1 Berlin.
+o Updated RADIUSTYPES.DEF dynamic update.
+o Updated shipping data files.
+
+Changes since version 1.00.16 :
+
+o Cosmetic changes.
+o Updated VENDORS.DEF dynamic update.
+o Updated shipping data files.
+
+Changes since version 1.00.15 :
+
++ Added ability to import CSV files (including IEEE Registry CSV files).
++ Added ability to retrieve IEEE Registry files using REST API.
++ Added OPERATORID.DEF data file distribution.
++ Added OPERATORID.DEF dynamic update.
++ Added Windows 10 support.
++ Added 'Explore' capability.
+o Cosmetic changes.
+o Updated COMPANYID.DEF dynamic update.
+o Updated IABVENDORS.DEF dynamic update.
+o Updated MANUFACTURERID.DEF dynamic update.
+o Updated MAMVENDORS.DEF dynamic update.
+o Updated MASVENDORS.DEF dynamic update.
+o Updated shipping data files.
+
+Changes since version 1.00.14 :
+
++ Added MAMVENDORS.DEF data file distribution.
++ Added MAMVENDORS.DEF dynamic update.
++ Added MASVENDORS.DEF data file distribution.
++ Added MASVENDORS.DEF dynamic update.
++ Added COMPANYID.DEF data file distribution.
++ Added COMPANYID.DEF dynamic update.
++ Added MANUFACTURERID.DEF data file distribution.
++ Added MANUFACTURERID.DEF dynamic update.
+o Enhanced error reporting when updating data files.
+o Cosmetic changes.
+o Updated DHCPV6OPTIONS.DEF dynamic update.
+o Updated ETHERS.DEF dynamic update.
+o Updated shipping data files.
+
+Changes since version 1.00.13 :
+
++ Added COUNTRYCODES.DEF data file distribution.
++ Added ENTERPRISENUMBERS.DEF data file distribution.
++ Added ENTERPRISENUMBERS.DEF dynamic update.
+o Cosmetic changes.
+o Recompiled with Embarcadero Delphi XE5.
+o Updated PORTS.DEF dynamic update.
+o Updated RADIUSTYPES.DEF dynamic update.
+o Updated shipping data files.
+
+Changes since version 1.00.12 :
+
++ Added RADIUSTYPES.DEF data file distribution.
++ Added RADIUSTYPES.DEF dynamic update.
+o Enhanced duplicate items results view.
+o Cosmetic changes.
+o Updated IABVENDORS.DEF dynamic update.
+o Updated PORTS.DEF dynamic update.
+o Updated VENDORS.DEF dynamic update.
+o Updated shipping data files.
+
+Changes since version 1.00.11 :
+
++ Added IABVENDORS.DEF data file distribution.
++ Added IABVENDORS.DEF dynamic update.
+o Cosmetic changes.
+o Updated IANA data source for ethernet numbers.
+o Updated ICMPTYPES.DEF dynamic update.
+o Updated shipping data files.
+
+Changes since version 1.00.10 :
+
++ Added TIMEZONES.DEF data file distribution.
+o Enhanced duplicate items results view.
+o Cosmetic changes.
+o Updated shipping data files.
+
+Changes since version 1.00.09 :
+
++ Added ability to export selected items to CSV file.
++ Added INTERFACETYPES.DEF data file distribution.
++ Added INTERFACETYPES.DEF dynamic update.
++ Added TUNNELTYPES.DEF data file distribution.
+o Cosmetic changes.
+o Updated shipping data files.
+
+Changes since version 1.00.08 :
+
+o Cosmetic changes.
+o Updated shipping data files.
+! Fixed DHCP options handling.
+
+Changes since version 1.00.07 :
+
+o Cosmetic changes.
+o Updated IANA data source for ICMP parameters.
+o Updated IANA data source for port numbers.
+o Updated shipping data files.
+
+Changes since version 1.00.06 :
+
+o Cosmetic changes.
+o Updated shipping data files.
+
+Changes since version 1.00.05 :
+
+o Cosmetic changes.
+o Updated shipping data files.
+
+Changes since version 1.00.04 :
+
++ Added ability to derive an item.
+o Cosmetic changes.
+o Updated shipping data files.
+
+Changes since version 1.00.03 :
+
++ Added DHCPTYPES.DEF data file distribution.
++ Added DHCPV6OPTIONS.DEF data file distribution.
++ Added DHCPV6OPTIONS.DEF dynamic update.
+o Cosmetic changes.
+o Updated shipping data files.
+
+Changes since version 1.00.02 :
+
++ Added ability to check duplicate items.
+o Cosmetic changes.
+o Updated IANA data source for DHCP options, IP multicast addresses and protocol numbers.
+o Updated shipping data files.
+
+Changes since version 1.00.01 :
+
+o Recompiled with Embarcadero Delphi 2010 (Update 4/5).
+o Cosmetic changes.
+o Updated shipping data files.
+
+Changes since version 1.00.00 :
+
+o Cosmetic changes.
+o Updated shipping data files.
+! Fixed Open/Save XML operations.
+
+Legend :
+
++ New feature
+o Minor change
+! Bug fix

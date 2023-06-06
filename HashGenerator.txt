@@ -1,0 +1,190 @@
+Hash Generator (version 1.00.22)
+Developed by Jean-Fabien Connault (devonic@orange.fr)
+Copyright (c) 2009-2023 Devonic
+
+[https://cycocrew.github.io/devonic/]
+
+This application is designed for Windows Vista/7/8/8.1/10/11
+and allows you to handle file hashing.
+
+The following hash types are supported:
+
+CRC16
+CRC32
+Haval
+MD4
+MD5
+RipeMD128
+RipeMD160
+SHA1
+SHA256
+SHA384
+SHA512
+Tiger
+
+CRC16 and CRC32 hash algorithms implementation provided by The Indy Project.
+
+[http://www.indyproject.org/index.en.aspx].
+
+Haval, MD4, MD5, RipeMD128, RipeMD160, SHA1, SHA256, SHA384, SHA512 and Tiger hash algorithms implementation
+provided by Dave Barton at City in the Sky (DCPcrypt - Delphi Cryprography Package).
+
+[http://www.cityinthesky.co.uk/cryptography.html].
+
+The hash of a given file can be computed and for each hash type, a hash file can be generated.
+The computed hash and the filed hash are compared to check if they match.
+
+SETUP.EXE
+SETUP.EXE.CRC16
+SETUP.EXE.CRC32
+SETUP.EXE.HAVAL
+SETUP.EXE.MD4
+SETUP.EXE.MD5
+SETUP.EXE.RIPEMD128
+SETUP.EXE.RIPEMD160
+SETUP.EXE.SHA1
+SETUP.EXE.SHA256
+SETUP.EXE.SHA384
+SETUP.EXE.SHA512
+SETUP.EXE.TIGER
+
+Installation :
+
+- Execute the application setup executable.
+- Launch the 'Hash Generator' program from the 'Devonic' program group.
+
+Changes since version 1.00.21 :
+
+o Updated OpenSSL version from 1.1.1s to 1.1.1u.
+o Cosmetic changes.
+
+Changes since version 1.00.20 :
+
++ Added 'Include file name in hash file' checkbox on 'Hash' tab on 'Options' view.
++ Added 'Ignore binary mode in hash file' checkbox on 'Hash' tab on 'Options' view.
+o Changed hash case to lowercase by default.
+o Updated OpenSSL version from 1.1.1l to 1.1.1s.
+o Cosmetic changes.
+
+Changes since version 1.00.19 :
+
+o Updated OpenSSL version from 1.1.1h to 1.1.1l.
+o Cosmetic changes.
+o Recompiled with Embarcadero Delphi 11 Alexandria.
+
+Changes since version 1.00.18 :
+
+o Updated OpenSSL version from 1.0.2t to 1.1.1h.
+o Cosmetic changes.
+o Recompiled with Embarcadero Delphi 10.4 Sydney.
+
+Changes since version 1.00.17 :
+
++ Added ability to update application using HTTPS (leveraging OpenSSL).
++ Added distribution of OpenSSL version 1.0.2t.
+o Cosmetic changes.
+
+Changes since version 1.00.16 :
+
+o Enhanced handling of hash files so hash is displayed even if hash type is not selected.
+o Enhanced support of VMware Manifest files (*.mf).
+o Cosmetic changes.
+o Recompiled with Embarcadero Delphi 10.3 Rio.
+
+Changes since version 1.00.15 :
+
+o Cosmetic changes.
+o Recompiled with Embarcadero Delphi 10.1 Berlin.
+
+Changes since version 1.00.14 :
+
++ Added Windows 10 support.
+o Cosmetic changes.
+
+Changes since version 1.00.13 :
+
+o Cosmetic changes.
+
+Changes since version 1.00.12 :
+
+o Recompiled with Embarcadero Delphi XE5.
+o Cosmetic changes.
+
+Changes since version 1.00.11 :
+
+o Cosmetic changes.
+
+Changes since version 1.00.10 :
+
+o Enhanced file handling.
+o Cosmetic changes.
+
+Changes since version 1.00.09 :
+
+o Enhanced file handling.
+o Cosmetic changes.
+! Fixed Hash Generator file type description.
+
+Changes since version 1.00.08 :
+
+o Enhanced support of VMware Manifest files (*.mf).
+o Cosmetic changes.
+! Fixed inaccurate error message dialog display.
+
+Changes since version 1.00.07 :
+
++ Added support of VMware Manifest files (*.mf).
+o Cosmetic changes.
+! Fixed hash status after generating hash files.
+
+Changes since version 1.00.06 :
+
++ Added 'Default' button on 'Hash' tab on 'Options' view.
++ Added hash type hints on 'Hash' tab on 'Options' view.
++ Added HASHTYPES.DEF file distribution.
++ Added main window content scaling.
+o Cosmetic changes.
+
+Changes since version 1.00.05 :
+
+o Cosmetic changes.
+! Fixed file extensions association.
+
+Changes since version 1.00.04 :
+
++ Added CTRL+C keyboard shortcuts for 'Copy Hash (Computed) to Clipboard'.
++ Added CTRL+V keyboard shortcuts for 'Generate Hash (Filed) from Clipboard'.
++ Added hash length check.
+o Cosmetic changes.
+! Fixed 'Generate Hash (Filed) from Clipboard' with multi-line hash.
+
+Changes since version 1.00.03 :
+
++ Added support of 9 additional hash types: CRC16, Haval, MD4, RipeMD128, RipeMD160, SHA256, SHA384, SHA512 and Tiger.
++ Added 'Hash' tab on 'Options' view.
++ Added multi-line hash file support.
+o Improved hashing performances.
+o Recompiled with Embarcadero Delphi 2010 (Update 4/5).
+o Cosmetic changes.
+
+Changes since version 1.00.02 :
+
++ Added 'Hash Case' option in 'Options' view.
++ Added association of .crc32, .md5 and .sha1 file extensions.
+o Cosmetic changes.
+
+Changes since version 1.00.01 :
+
++ Added file size warning thresold (MB) in 'Options' view.
+o Recompiled with Embarcadero Delphi 2010.
+o Cosmetic changes.
+
+Changes since version 1.00.00 :
+
+o Cosmetic changes.
+
+Legend :
+
++ New feature
+o Minor change
+! Bug fix

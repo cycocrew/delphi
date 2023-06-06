@@ -1,0 +1,230 @@
+Fingerprint Editor (version 1.00.20)
+Developed by Jean-Fabien Connault (devonic@orange.fr)
+Copyright (c) 2009-2023 Devonic
+
+[https://cycocrew.github.io/devonic/]
+
+This application is designed for Windows Vista/7/8/8.1/10/11
+and allows you to manipulate Fingerprint files (*.xml).
+
+This application uses the DHCPOPTIONS.DEF file for DHCP options
+identification. This file is generated based on the BOOTP-DHCP-PARAMETERS.TXT
+file from the IANA (Internet Assigned Numbers Authority).
+
+[https://www.iana.org/assignments/bootp-dhcp-parameters/bootp-dhcp-parameters.txt]
+
+This application uses the DHCPv6OPTIONS.DEF file for DHCPv6 options
+identification. This file is generated based on the DHCPv6-PARAMETERS.TXT
+file from the IANA (Internet Assigned Numbers Authority).
+
+[https://www.iana.org/assignments/dhcpv6-parameters/dhcpv6-parameters.txt]
+
+This application uses the ICMPTYPES.DEF file for ICMP types
+identification. This file is generated based on the ICMP-PARAMETERS.TXT
+file from the IANA (Internet Assigned Numbers Authority).
+
+[https://www.iana.org/assignments/icmp-parameters/icmp-parameters.txt]
+
+This application uses the VENDORS.DEF file for networking vendors (MA-L)
+MAC addresses identification. This file is generated based on the OUI.CSV
+file from the IEEE (Institute of Electrical and Electronics Engineers).
+
+[https://standards-oui.ieee.org/oui/oui.csv]
+
+This application uses the DHCP.XML file as a DHCP fingerprints database.
+This file is maintained by Eric Kollmann (xnih13@gmail.com).
+
+[https://raw.githubusercontent.com/xnih/satori/master/fingerprints/dhcp.xml]
+
+This application uses the DHCPv6.XML file as a DHCPv6 fingerprints database.
+This file is maintained by Eric Kollmann (xnih13@gmail.com).
+
+[https://raw.githubusercontent.com/xnih/satori/master/fingerprints/dhcpv6.xml]
+
+This application uses the ICMP.XML file as an ICMP fingerprints database.
+This file is maintained by Eric Kollmann (xnih13@gmail.com).
+
+[https://raw.githubusercontent.com/xnih/satori/master/fingerprints/icmp.xml]
+
+This application uses the MAC.XML file as a MAC fingerprints database.
+This file is maintained by Eric Kollmann (xnih13@gmail.com).
+
+[https://raw.githubusercontent.com/xnih/satori/master/fingerprints/mac.xml]
+
+This application uses the SIP.XML file as a SIP Server fingerprints database.
+This file is maintained by Eric Kollmann (xnih13@gmail.com).
+
+[https://raw.githubusercontent.com/xnih/satori/master/fingerprints/sip.xml]
+
+This application uses the SMB.XML file as a SMB fingerprints database.
+This file is maintained by Eric Kollmann (xnih13@gmail.com).
+
+[https://raw.githubusercontent.com/xnih/satori/master/fingerprints/smb.xml]
+
+This application uses the BROWSER.XML file as a SMB Browser fingerprints database.
+This file is maintained by Eric Kollmann (xnih13@gmail.com).
+
+[https://raw.githubusercontent.com/xnih/satori/master/fingerprints/browser.xml]
+
+This application uses the SSL.XML file as a SSL fingerprints database.
+This file is maintained by Eric Kollmann (xnih13@gmail.com).
+
+[https://raw.githubusercontent.com/xnih/satori/master/fingerprints/ssl.xml]
+
+This application uses the TCP.XML file as a TCP fingerprints database.
+This file is maintained by Eric Kollmann (xnih13@gmail.com).
+
+[https://raw.githubusercontent.com/xnih/satori/master/fingerprints/tcp.xml]
+
+This application uses the WEB.XML file as a Web Server fingerprints database.
+This file is maintained by Eric Kollmann (xnih13@gmail.com).
+
+[https://raw.githubusercontent.com/xnih/satori/master/fingerprints/web.xml]
+
+This application uses the WEBUSERAGENT.XML file as a Web User Agent fingerprints database.
+This file is maintained by Eric Kollmann (xnih13@gmail.com).
+
+[https://raw.githubusercontent.com/xnih/satori/master/fingerprints/webuseragent.xml]
+
+Installation :
+
+- Execute the application setup executable.
+- Launch the 'Fingerprint Editor' program from the 'Devonic' program group.
+
+Changes since version 1.00.19 :
+
+o Updated OpenSSL version from 1.1.1n to 1.1.1u.
+o Cosmetic changes.
+o Updated shipping data files.
+
+Changes since version 1.00.18 :
+
+o Updated OpenSSL version from 1.1.1m to 1.1.1n.
+o Cosmetic changes.
+o Updated shipping data files.
+
+Changes since version 1.00.17 :
+
++ Added support of SSL fingerprints (JA3/JA3S).
+o Updated OpenSSL version from 1.1.1l to 1.1.1m.
+o Cosmetic changes.
+o Updated shipping data files.
+
+Changes since version 1.00.16 :
+
+o Updated OpenSSL version from 1.1.1h to 1.1.1l.
+o Cosmetic changes.
+o Recompiled with Embarcadero Delphi 11 Alexandria.
+o Updated shipping data files.
+
+Changes since version 1.00.15 :
+
+o Updated fingerprints URLs.
+o Updated DHCPOPTIONS.DEF dynamic update.
+o Updated OpenSSL version from 1.0.2t to 1.1.1h.
+o Cosmetic changes.
+o Recompiled with Embarcadero Delphi 10.4 Sydney.
+o Updated shipping data files.
+
+Changes since version 1.00.14 :
+
++ Added ability to update application using HTTPS (leveraging OpenSSL).
++ Added ability to retrieve data files using HTTPS (leveraging OpenSSL).
++ Added distribution of OpenSSL version 1.0.2t.
+o Cosmetic changes.
+o Updated shipping data files.
+
+Changes since version 1.00.13 :
+
+o Using SHA256 instead of MD5 during file hashing.
+o Cosmetic changes.
+o Recompiled with Embarcadero Delphi 10.3 Rio.
+o Updated shipping data files.
+
+Changes since version 1.00.12 :
+
+o Cosmetic changes.
+o Recompiled with Embarcadero Delphi 10.1 Berlin.
+o Updated shipping data files.
+
+Changes since version 1.00.11 :
+
++ Added Windows 10 support.
+o Enhanced error reporting when updating data files.
+o Cosmetic changes.
+o Recompiled with Embarcadero Delphi XE5.
+o Updated shipping data files.
+
+Changes since version 1.00.10 :
+
+o Cosmetic changes.
+o Updated shipping data files.
+o Updated Satori XML files links.
+
+Changes since version 1.00.09 :
+
+o Enhanced data files update process.
+o Cosmetic changes.
+o Updated shipping data files.
+
+Changes since version 1.00.08 :
+
+o Cosmetic changes.
+o Updated IANA data source for ICMP parameters.
+o Updated shipping data files.
+! Fixed potential data file encoding issue.
+
+Changes since version 1.00.07 :
+
+o Cosmetic changes.
+o Updated shipping data files.
+
+Changes since version 1.00.06 :
+
+o Cosmetic changes.
+o Updated shipping data files.
+! Fixed potential error while deleting tests.
+
+Changes since version 1.00.05 :
+
++ Added support for DHCPv6 fingerprints.
+o Cosmetic changes.
+o Updated shipping data files.
+
+Changes since version 1.00.04 :
+
++ Added support for SIP Server fingerprints.
+o Cosmetic changes.
+o Updated shipping data files.
+
+Changes since version 1.00.03 :
+
+o Cosmetic changes.
+o Updated shipping data files.
+! Fixed potential error while deleting tests.
+
+Changes since version 1.00.02 :
+
+o Cosmetic changes.
+o Updated IANA data source for DHCP options.
+o Updated shipping data files.
+! Fixed potential error while pasting fingerprint from clipboard.
+
+Changes since version 1.00.01 :
+
++ Added support of UTF-8 encoded Fingerprint files (*.xml).
++ Added ability to export fingerprints to CSV file (header only).
+o Recompiled with Embarcadero Delphi 2010 (Update 4/5).
+o Cosmetic changes.
+
+Changes since version 1.00.00 :
+
+o Cosmetic changes.
+o Updated shipping data files.
+! Fixed issue when updating data files.
+
+Legend :
+
++ New feature
+o Minor change
+! Bug fix

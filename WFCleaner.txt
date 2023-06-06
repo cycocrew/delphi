@@ -1,0 +1,104 @@
+Windows Folder Cleaner (version 1.00.16)
+Developed by Jean-Fabien Connault (devonic@orange.fr)
+Copyright (c) 2005-2023 Devonic
+
+[https://cycocrew.github.io/devonic/]
+
+This application is designed for Windows Vista/7/8/8.1/10/11
+and allows you to clean selected folder content.
+
+This application requires Administrator privileges.
+
+Installation :
+
+- Execute the application setup executable.
+- Launch the 'Windows Folder Cleaner' program from the 'Devonic' program group.
+
+Changes since version 1.00.15 :
+
+o Updated OpenSSL version from 1.1.1l to 1.1.1u.
+o Cosmetic changes.
+
+Changes since version 1.00.14 :
+
+o Updated OpenSSL version from 1.1.1h to 1.1.1l.
+o Cosmetic changes.
+o Recompiled with Embarcadero Delphi 11 Alexandria.
+
+Changes since version 1.00.13 :
+
+o Updated OpenSSL version from 1.0.2t to 1.1.1h.
+o Cosmetic changes.
+o Recompiled with Embarcadero Delphi 10.4 Sydney.
+
+Changes since version 1.00.12 :
+
++ Added ability to update application using HTTPS (leveraging OpenSSL).
++ Added distribution of OpenSSL version 1.0.2t.
+o Cosmetic changes.
+
+Changes since version 1.00.11 :
+
+o Cosmetic changes.
+o Recompiled with Embarcadero Delphi 10.3 Rio.
+
+Changes since version 1.00.10 :
+
+o Cosmetic changes.
+o Recompiled with Embarcadero Delphi 10.1 Berlin.
+
+Changes since version 1.00.09 :
+
++ Added Windows 10 support.
+o Cosmetic changes.
+o Recompiled with Embarcadero Delphi XE5.
+
+Changes since version 1.00.08 :
+
+o Cosmetic changes.
+
+Changes since version 1.00.07 :
+
+o Cosmetic changes.
+! Fixed handling of hidden, system and archive files.
+
+Changes since version 1.00.06 :
+
+o Cosmetic changes.
+
+Changes since version 1.00.05 :
+
+o Recompiled with Embarcadero Delphi 2010 (Update 4/5).
+o Cosmetic changes.
+
+Changes since version 1.00.04 :
+
+o Recompiled with CodeGear Delphi 2009 (Update 1).
+o Cosmetic changes.
+
+Changes since version 1.00.03 :
+
++ Added 'IE' button on the 'Update' tab of the 'Options' window.
+o Cosmetic changes.
+o Recompiled with CodeGear Delphi 2007 for Win32 (December 2007 Update).
+
+Changes since version 1.00.02 :
+
+o Cosmetic changes.
+o Recompiled with CodeGear Delphi 2007 for Win32.
+
+Changes since version 1.00.01 :
+
++ Added 'Statistics' view.
+o Cosmetic changes.
+
+Changes since version 1.00.00 :
+
++ Added system folders and files handling.
+o Cosmetic changes.
+
+Legend :
+
++ New feature
+o Minor change
+! Bug fix

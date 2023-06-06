@@ -2,7 +2,7 @@ Flight Tracker (version 1.00.17)
 Developed by Jean-Fabien Connault (devonic@orange.fr)
 Copyright (c) 2008-2023 Devonic
 
-[https://cycocrew.github.io/delphi/]
+[https://cycocrew.github.io/devonic/]
 
 This application is designed for Windows Vista/7/8/8.1/10/11
 and allows you to manage airline flights. This includes management of flights, airlines,
@@ -20,7 +20,7 @@ Installation :
 
 Changes since version 1.00.16 :
 
-o Updated OpenSSL version from 1.1.1l to 1.1.1t.
+o Updated OpenSSL version from 1.1.1l to 1.1.1u.
 o Cosmetic changes.
 
 Changes since version 1.00.15 :

@@ -1,0 +1,396 @@
+Windows Contacts Manager (version 1.02.03)
+Developed by Jean-Fabien Connault (devonic@orange.fr)
+Copyright (c) 2009-2023 Devonic
+
+[https://cycocrew.github.io/devonic/]
+
+This application is designed for Windows Vista/7/8/8.1/10/11
+and allows you to manage contacts.
+
+Contacts are stored per Windows User Account in a contacts book file named <Windows_User_Account>.wcb
+located in %USERPROFILE%\<Windows_User_Account>\Contacts (by default). The location of contacts book
+files can controlled in advanced options.
+
+Contacts can be synced with Google Contacts Service.
+
+Contacts can be imported/exported from/to the following formats:
+
+BlackBerry
+Google
+Nokia
+Outlook
+Outlook (French)
+Windows Contacts (including Windows Live Contacts)
+Yahoo!
+
+Note that before importing contacts in Outlook, it may be useful to visit Phone and Modem control panel
+and setup 'My Location', in order to have phone unumbers properly imported.
+
+LDIF (.ldif), vCard (.vcf) formats are also supported for individual contacts storage (read/write).
+Windows Contacts (.contact) format is also supported for individual contacts storage (read only).
+
+The following CSV formats are supported for import and/or export.
+Note that CSV headers must exactly match.
+
+BatchGeo CSV Header :
+
+Address	City	State	Zip	Title	Group	Phone	Email	URL
+
+BlackBerry CSV header :
+
+"First Name","Middle Name","Last Name","Title","Company Name","Work Phone","Work Phone2",
+"Home Phone","Home Phone2","Other Phone","Fax","Mobile Phone","PIN","Pager","Email Address 1",
+"Email Address 2","Email Address 3","Address1","Address2","Address3","City","State/Prov",
+"Zip/Postal Code","Country","Home Address1","Home Address2","Home Address3","Home City",
+"Home State/Prov","Home Zip/Postal Code","Home Country","Notes","Interactive Handheld",
+"1-way Pager","User Defined 1","User Defined 2","User Defined 3","User Defined 4","Salutation",
+"Web Address","Direct Connect","Categories","Birthday","Anniversary"
+
+Google CSV Header :
+
+Name,Given Name,Additional Name,Family Name,Yomi Name,Given Name Yomi,Additional Name Yomi,Family Name Yomi,Name Prefix,Name Suffix,Initials,Nickname,Short Name,Maiden Name,
+Birthday,Gender,Location,Billing Information,Directory Server,Mileage,Occupation,Hobby,Sensitivity,Priority,Subject,Notes,Group Membership,
+E-mail 1 - Type,E-mail 1 - Value,E-mail 2 - Type,E-mail 2 - Value,E-mail 3 - Type,E-mail 3 - Value,IM 1 - Type,IM 1 - Service,IM 1 - Value,IM 2 - Type,IM 2 - Service,IM 2 - Value,
+Phone 1 - Type,Phone 1 - Value,Phone 2 - Type,Phone 2 - Value,Phone 3 - Type,Phone 3 - Value,Phone 4 - Type,Phone 4 - Value, Phone 5 - Type,Phone 5 - Value,
+Address 1 - Type,Address 1 - Formatted,Address 1 - Street,Address 1 - City,Address 1 - PO Box,Address 1 - Region,Address 1 - Postal Code,Address 1 - Country,Address 1 - Extended Address,
+Address 2 - Type,Address 2 - Formatted,Address 2 - Street,Address 2 - City,Address 2 - PO Box,Address 2 - Region,Address 2 - Postal Code,Address 2 - Country,Address 2 - Extended Address,
+Address 3 - Type,Address 3 - Formatted,Address 3 - Street,Address 3 - City,Address 3 - PO Box,Address 3 - Region,Address 3 - Postal Code,Address 3 - Country,Address 3 - Extended Address,
+Organization 1 - Type,Organization 1 - Name,Organization 1 - Yomi Name,Organization 1 - Title,Organization 1 - Department,Organization 1 - Symbol,Organization 1 - Location,Organization 1 - Job Description,
+Relation 1 - Type,Relation 1 - Value,Website 1 - Type,Website 1 - Value,Website 2 - Type,Website 2 - Value,Event 1 - Type,Event 1 - Value
+
+Google Deprecated CSV header :
+
+Name,E-mail,Notes,Section 1 - Description,Section 1 - Email,Section 1 - IM,Section 1 - Phone,
+Section 1 - Mobile, Section 1 - Pager,Section 1 - Fax,Section 1 - Company,Section 1 - Title,
+Section 1 - Other, Section 1 - Address,Section 2 - Description,Section 2 - Email,
+Section 2 - IM,Section 2 - Phone,Section 2 - Mobile,Section 2 - Pager,Section 2 - Fax,Section 2 - Company,
+Section 2 - Title,Section 2 - Other,Section 2 - Address,Section 3 - Description,Section 3 - Email,
+Section 3 - IM,Section 3 - Phone,Section 3 - Mobile,Section 3 - Pager,Section 3 - Fax,Section 3 - Company,
+Section 3 - Title,Section 3 - Other,Section 3 - Address,Section 4 - Description,Section 4 - Email,
+Section 4 - IM,Section 4 - Phone,Section 4 - Mobile,Section 4 - Pager,Section 4 - Fax,Section 4 - Company,
+Section 4 - Title,Section 4 - Other,Section 4 - Address,Section 5 - Description,Section 5 - Email,
+Section 5 - IM,Section 5 - Phone,Section 5 - Mobile,Section 5 - Pager,Section 5 - Fax,Section 5 - Company,
+Section 5 - Title,Section 5 - Other,Section 5 - Address
+
+Nokia CSV header :
+
+"Title";"First name";"Middle name";"Last name";"Suffix";"Job title";"Company";"Birthday";"SIP address";
+"Push-to-talk";"Share view";"User ID";"Notes";"General mobile";"General phone";"General e-mail";
+"General fax";"General video call";"General web address";"General VOIP address";"General P.O.Box";
+"General extension";"General street";"General postal/ZIP code";"General city";"General state/province";
+"General country/region";"Home mobile";"Home phone";"Home e-mail";"Home fax";"Home video call";
+"Home web address";"Home VOIP address";"Home P.O.Box";"Home extension";"Home street";"Home postal/ZIP code";
+"Home city";"Home state/province";"Home country/region";"Business mobile";"Business phone";"Business e-mail";
+"Business fax";"Business video call";"Business web address";"Business VOIP address";"Business P.O.Box";
+"Business extension";"Business street";"Business postal/ZIP code";"Business city";"Business state/province";
+"Business country/region";""
+
+Outlook CSV header :
+
+"Title","First Name","Middle Name","Last Name","Suffix","Company","Department","Job Title","Business Street",
+"Business Street 2","Business Street 3","Business City","Business State","Business Postal Code",
+"Business Country/Region","Home Street","Home Street 2","Home Street 3","Home City","Home State",
+"Home Postal Code","Home Country/Region","Other Street","Other Street 2","Other Street 3","Other City",
+"Other State","Other Postal Code","Other Country/Region","Assistant's Phone","Business Fax","Business Phone",
+"Business Phone 2","Callback","Car Phone","Company Main Phone","Home Fax","Home Phone","Home Phone 2",
+"ISDN","Mobile Phone","Other Fax","Other Phone","Pager","Primary Phone","Radio Phone","TTY/TDD Phone","Telex",
+"Account","Anniversary","Assistant's Name","Billing Information","Birthday","Business Address PO Box",
+"Categories","Children","Directory Server","E-mail Address","E-mail Type","E-mail Display Name",
+"E-mail 2 Address","E-mail 2 Type","E-mail 2 Display Name","E-mail 3 Address","E-mail 3 Type",
+"E-mail 3 Display Name","Gender","Government ID Number","Hobby","Home Address PO Box","Initials",
+"Internet Free Busy","Keywords","Language","Location","Manager's Name","Mileage","Notes","Office Location",
+"Organizational ID Number","Other Address PO Box","Priority","Private","Profession","Referred By","Sensitivity",
+"Spouse","User 1","User 2","User 3","User 4","Web Page"
+
+Outlook (French) CSV header :
+
+"Titre","Prénom","Deuxième prénom","Nom","Suffixe","Société","Service","Titre",
+"Rue (bureau)","Rue (bureau) 2","Rue (bureau) 3","Ville (bureau)","Dép/Région (bureau)","Code postal (bureau)","Pays/Région (bureau)",
+"Rue (domicile)","Rue (domicile) 2","Rue (domicile) 3","Ville (domicile)","Dép/Région (domicile)","Code postal (domicile)","Pays/Région (domicile)",
+"Rue (autre)","Rue (autre) 2","Rue (autre) 3","Ville (autre)","Dép/Région (autre)","Code postal (autre)","Pays/Région (autre)",
+"Téléphone de l''assistant(e)","Télécopie (bureau)","Téléphone (bureau)","Téléphone 2 (bureau)","Rappel","Téléphone (voiture)","Téléphone société",
+"Télécopie (domicile)","Téléphone (domicile)","Téléphone 2 (domicile)","RNIS","Tél. mobile","Télécopie (autre)","Téléphone (autre)","Récepteur de radiomessagerie","Téléphone principal","Radio téléphone","Téléphone TDD/TTY","Télex",
+"Adresse de messagerie","Type de messagerie","Nom complet de l''adresse de messagerie","Adresse de messagerie 2","Type de messagerie 2","Nom complet de l''adresse de messagerie 2",
+"Adresse de messagerie 3","Type de messagerie 3","Nom complet de l''adresse de messagerie 3",
+"Anniversaire","Anniversaire de mariage ou fête","Autre boîte postale","B.P. professionnelle","Boîte postale du domicile","Bureau","Catégories","Code gouvernement","Compte","Conjoint(e)","Critère de diffusion","Disponibilité Internet",
+"Emplacement","Enfants","Informations facturation","Initiales","Kilométrage","Langue","Mots clés","Nom de l''assistant(e)","Notes","Numéro d''identification de l''organisation","Page Web",
+"Passe-temps","Priorité","Privé","Profession","Recommandé par","Responsable","Serveur d''annuaire",
+"Sexe","Utilisateur 1","Utilisateur 2","Utilisateur 3","Utilisateur 4"
+
+Windows Contacts CSV header :
+
+First Name;Last Name;Middle Name;Name;Nickname;E-mail Address;Home Street;Home City;Home Postal Code;Home State;
+Home Country/Region;Home Phone;Home Fax;Mobile Phone;Personal Web Page;Business Street;Business City;
+Business Postal Code;Business State;Business Country/Region;Business Web Page;Business Phone;Business Fax;Pager;
+Company;Job Title;Department;Office Location;Notes
+
+Yahoo! CSV header :
+
+"First","Middle","Last","Nickname","Email","Category","Distribution Lists","Messenger ID","Home","Work","Pager",
+"Fax","Mobile","Other","Yahoo! Phone","Primary","Alternate Email 1","Alternate Email 2","Personal Website",
+"Business Website","Title","Company","Work Address","Work City","Work State","Work ZIP","Work Country",
+"Home Address","Home City","Home State","Home ZIP","Home Country","Birthday","Anniversary","Custom 1",
+"Custom 2","Custom 3","Custom 4","Comments","Messenger ID1","Messenger ID2","Messenger ID3","Messenger ID4",
+"Messenger ID5","Messenger ID6","Messenger ID7","Messenger ID8","Messenger ID9","Skype ID","IRC ID","ICQ ID",
+"Google ID","MSN ID","AIM ID","QQ ID"
+
+ZeeMaps CSV header :
+
+"Name","Street","City","State","Country","Zipcode","Color","Notes","Website","Phone","Email"
+
+Notes :
+
+If you're using Microsoft Outlook as an e-mail client, the following applications can be used
+to sync with Google Contacts Service:
+
+- Google Apps Sync for Microsoft Outlook (https://tools.google.com/dlpage/gappssync)
+- GO Contact Sync Mod (http://sourceforge.net/projects/googlesyncmod)
+- Outlook4Gmail (http://scand.com/products/outlook4gmail)
+
+Installation :
+
+- Execute the application setup executable.
+- Launch the 'Windows Contacts Manager' program from the 'Devonic' program group.
+
+Changes since version 1.02.02 :
+
+o Updated OpenSSL version from 1.1.1s to 1.1.1u.
+o Cosmetic changes.
+
+Changes since version 1.02.01 :
+
+o Enhanced clearing of Google Refresh Token.
+o Updated OAuth 2.0 flow (loopback IP address - 127.0.0.1:3000) when connecting to Google services.
+o Updated OpenSSL version from 1.1.1l to 1.1.1s.
+o Cosmetic changes.
+
+Changes since version 1.02.00 :
+
+o Updated OAuth 2.0 flow (out-of-band - external web browser) when connecting to Google services.
+o Updated OpenSSL version from 1.1.1h to 1.1.1l.
+o Cosmetic changes.
+o Recompiled with Embarcadero Delphi 11 Alexandria.
+
+Changes since version 1.01.11 :
+
+o Migrated from Google Contacts API to Google People API.
+o Cosmetic changes.
+
+Changes since version 1.01.10 :
+
+o Cosmetic changes.
+o Recompiled with Embarcadero Delphi 10.4 Sydney.
+! Fixed Google Contacts API authentication.
+
+Changes since version 1.01.09 :
+
+o Updated OpenSSL version from 1.0.2t to 1.0.2u.
+o Cosmetic changes.
+! Fixed encryption/decryption of Google Refresh Token.
+! Fixed Google Contacts API authentication.
+
+Changes since version 1.01.08 :
+
++ Added ability to update application using HTTPS (leveraging OpenSSL).
++ Added ability to provide a Google Geocoding Key to enable geocoding functionality.
+o Updated encryption/decryption of Google Refresh Token.
+o Updated OpenSSL version from 1.0.2r to 1.0.2t.
+o Cosmetic changes.
+
+Changes since version 1.01.07 :
+
++ Added ability to update application using HTTPS (leveraging OpenSSL).
+o Updated OpenSSL version from 1.0.2q to 1.0.2r.
+o Cosmetic changes.
+! Fixed potential XML parsing issue during synchronization with Google Contacts API.
+
+Changes since version 1.01.06 :
+
++ Added 'Use display name as windows user account for storage' checkbox on 'Advanced' tab on 'Options' window.
+o Updated OpenSSL version from 1.0.2k to 1.0.2q.
+o Cosmetic changes.
+o Recompiled with Embarcadero Delphi 10.3 Rio.
+
+Changes since version 1.01.05 :
+
+o Enhanced search people capability for various social networks (Biznik, Facebook, LinkedIn, Spoke).
+o Updated OpenSSL version from 1.0.2j to 1.0.2k.
+o Cosmetic changes.
+
+Changes since version 1.01.04 :
+
+o Updated OpenSSL version from 1.0.1q to 1.0.2j.
+o Cosmetic changes.
+o Recompiled with Embarcadero Delphi 10.1 Berlin.
+
+Changes since version 1.01.03 :
+
+o Updated OpenSSL version from 1.0.1q to 1.0.2g.
+o Cosmetic changes.
+
+Changes since version 1.01.02 :
+
+o Updated OpenSSL version from 1.0.1p to 1.0.1q.
+o Cosmetic changes.
+
+Changes since version 1.01.01 :
+
++ Added Windows 10 support.
+o Cosmetic changes.
+
+Changes since version 1.01.00 :
+
+o Updated OpenSSL version from 1.0.1o to 1.0.1p.
+o Cosmetic changes.
+
+Changes since version 1.00.20 :
+
+o Migrated to OAuth 2.0 for Google Contacts API authentication.
+o Updated OpenSSL version from 1.0.1m to 1.0.1o.
+o Cosmetic changes.
+! Fixed geocoding of addresses containing dashes.
+
+Changes since version 1.00.19 :
+
+o Updated OpenSSL version from 1.0.1l to 1.0.1m.
+o Cosmetic changes.
+
+Changes since version 1.00.18 :
+
+o Updated OpenSSL version from 1.0.1j to 1.0.1l.
+o Cosmetic changes.
+
+Changes since version 1.00.17 :
+
+o Updated OpenSSL version from 1.0.1i to 1.0.1j.
+o Cosmetic changes.
+
+Changes since version 1.00.16 :
+
+o Updated Google Contacts API HTTP calls to avoid encoding issues.
+o Updated Google Contacts API HTTP return codes handling.
+o Updated OpenSSL version from 1.0.1g to 1.0.1i.
+o Cosmetic changes.
+
+Changes since version 1.00.15 :
+
++ Added ability to export contacts to Google Earth file (*.kml).
++ Added 'Google Earth' tab on 'Options' window.
+o Updated all Google Contacts API calls to use SSL.
+o Updated OpenSSL version from 1.0.1e to 1.0.1g.
+o Cosmetic changes.
+o Recompiled with Embarcadero Delphi XE5.
+
+Changes since version 1.00.14 :
+
+o Updated OpenSSL version from 1.0.1c to 1.0.1e.
+o Cosmetic changes.
+
+Changes since version 1.00.13 :
+
+o Updated OpenSSL version from 1.0.0i to 1.0.1c.
+o Cosmetic changes.
+
+Changes since version 1.00.12 :
+
++ Added ability to import/export contacts from/to Outlook French file (*.csv).
+o Updated OpenSSL version from 1.0.0e to 1.0.0i.
+o Cosmetic changes.
+
+Changes since version 1.00.11 :
+
+o Optimized saved WCB files size.
+o Updated OpenSSL version from 1.0.0d to 1.0.0e.
+o Cosmetic changes.
+o Updated CATEGORIES.DEF file.
+
+Changes since version 1.00.10 :
+
+o Cosmetic changes.
+
+Changes since version 1.00.09 :
+
+o Enhanced ability to import vCard files (*.vcf).
+o Cosmetic changes.
+
+Changes since version 1.00.08 :
+
++ Added 'Visit Count' contact attribute.
++ Added ability to export contacts to BatchGeo (http://www.batchgeo.com/) file (*.csv).
++ Added 'BatchGeo' tab on 'Options' window.
+o Updated OpenSSL version from 1.0.0 to 1.0.0d.
+o Cosmetic changes.
+
+Changes since version 1.00.07 :
+
+o Updated OpenSSL version from 0.9.8l to 1.0.0.
+o Cosmetic changes.
+
+Changes since version 1.00.06 :
+
++ Added 'Display' tab on 'Options' window.
++ Added contacts book location controls on the 'Advanced' tab of 'Options' window.
++ Added ability to copy contact's location to clipboard.
++ Added ability to format e-mail addresses.
+o Recompiled with Embarcadero Delphi 2010 (Update 4/5).
+o Cosmetic changes.
+
+Changes since version 1.00.05 :
+
++ Added PO Box support during sync with Google Contacts Service.
+o Cosmetic changes.
+! Fixed font size on contact properties window.
+
+Changes since version 1.00.04 :
+
++ Added 'Find' tab on 'Options' window.
+o Accented chars are now ignored by default during find (configurable option).
+o Updated OpenSSL version from 0.9.8k to 0.9.8l.
+o Updated OpenSSL distribution location.
+- Removed 'libssl32.dll' from distribution.
+
+Changes since version 1.00.03 :
+
++ Added ability to export contacts to ZeeMaps (http://www.zeemaps.com/) file (*.csv).
++ Added 'ZeeMaps' tab on 'Options' window.
++ Added support of '&' operator in find box when filter mode is enabled.
++ Added 'Priority' and 'Sensitivity' columns on main view.
+o Cosmetic changes.
+
+Changes since version 1.00.02 :
+
++ Added 'Send E-mail|All' menu item.
++ Added 'Starred in Android' category for Google Contacts Service.
++ Added 'Insert date/time mark' speedbutton on contact view 'Notes' tab.
++ Added Skype support in contact notes (double-click action with 'Skype' keyword).
++ Added read-only contact photo support (only available after syncing with Google Contacts Service).
+o Recompiled with Embarcadero Delphi 2010 (Update 1).
+o Cosmetic changes.
+
+Changes since version 1.00.01 :
+
++ Added 'Google Contacts' speedbutton.
++ Added 'Last Visit' column on main view.
++ Added ability to clean contacts by removing duplicates.
++ Added ability to derive a contact.
+o Renamed 'Full Name' column  to 'Display Name' column on main view.
+o Cosmetic changes.
+! Fixed possible wrong language selection while importing vCard (*.vcf) files.
+
+Changes since version 1.00.00 :
+
++ Added ability to import/export multiple contacts from/to LDIF files (*.ldif) and vCard files (*.vcf).
++ Added search people capability for various social networks (Biznik, Facebook, LinkedIn, Naymz, Plaxo, Spoke).
++ Added postal address editor.
++ Added support of Outlook (French) CSV header.
++ Added 'Format' tab on 'Options' window.
++ Added options to format contacts (including dial number, website and last name uppercase).
+o Cosmetic changes.
+o Updated Google CSV Header support to latest version.
+! Fixed potential issue with notes sync.
+
+Legend :
+
++ New feature
+o Minor change
+! Bug fix
