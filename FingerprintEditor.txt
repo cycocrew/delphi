@@ -1,4 +1,4 @@
-Fingerprint Editor (version 1.00.20)
+Fingerprint Editor (version 1.00.21)
 Developed by Jean-Fabien Connault (devonic@orange.fr)
 Copyright (c) 2009-2023 Devonic
 
@@ -41,6 +41,11 @@ This file is maintained by Eric Kollmann (xnih13@gmail.com).
 
 [https://raw.githubusercontent.com/xnih/satori/master/fingerprints/dhcpv6.xml]
 
+This application uses the DNS.XML file as a DNS fingerprints database.
+This file is maintained by Eric Kollmann (xnih13@gmail.com).
+
+[https://raw.githubusercontent.com/xnih/satori/master/fingerprints/dns.xml]
+
 This application uses the ICMP.XML file as an ICMP fingerprints database.
 This file is maintained by Eric Kollmann (xnih13@gmail.com).
 
@@ -50,6 +55,11 @@ This application uses the MAC.XML file as a MAC fingerprints database.
 This file is maintained by Eric Kollmann (xnih13@gmail.com).
 
 [https://raw.githubusercontent.com/xnih/satori/master/fingerprints/mac.xml]
+
+This application uses the NTP.XML file as a NTP fingerprints database.
+This file is maintained by Eric Kollmann (xnih13@gmail.com).
+
+[https://raw.githubusercontent.com/xnih/satori/master/fingerprints/ntp.xml]
 
 This application uses the SIP.XML file as a SIP Server fingerprints database.
 This file is maintained by Eric Kollmann (xnih13@gmail.com).
@@ -90,6 +100,13 @@ Installation :
 
 - Execute the application setup executable.
 - Launch the 'Fingerprint Editor' program from the 'Devonic' program group.
+
+Changes since version 1.00.20 :
+
++ Added support of DNS fingerprints.
++ Added support of NTP fingerprints.
+o Cosmetic changes.
+o Updated shipping data files.
 
 Changes since version 1.00.19 :
 

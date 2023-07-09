@@ -15,12 +15,12 @@ UpdatePageURL=https://cycocrew.github.io/devonic/applications.html
 Version=1.01.03
 
 [FingerprintEditor]
-DownloadFileURL=https://cycocrew.github.io/devonic/FingerprintEditor-1.00.20-Setup.exe
+DownloadFileURL=https://cycocrew.github.io/devonic/FingerprintEditor-1.00.21-Setup.exe
 ReadmeFileURL=https://cycocrew.github.io/devonic/FingerprintEditor.txt
-DownloadFileURL64=https://cycocrew.github.io/devonic/FingerprintEditor-1.00.20-Setup64.exe
+DownloadFileURL64=https://cycocrew.github.io/devonic/FingerprintEditor-1.00.21-Setup64.exe
 ReadmeFileURL64=https://cycocrew.github.io/devonic/FingerprintEditor.txt
 UpdatePageURL=https://cycocrew.github.io/devonic/applications.html
-Version=1.00.20
+Version=1.00.21
 
 [FlightTracker]
 DownloadFileURL=https://cycocrew.github.io/devonic/FlightTracker-1.00.17-Setup.exe
