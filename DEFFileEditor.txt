@@ -1,4 +1,4 @@
-DEF File Editor (version 1.01.03)
+DEF File Editor (version 1.01.04)
 Developed by Jean-Fabien Connault (devonic@orange.fr)
 Copyright (c) 2009-2023 Devonic
 
@@ -150,6 +150,12 @@ Installation :
 
 - Execute the application setup executable.
 - Launch the 'DEF File Editor' program from the 'Devonic' program group.
+
+Changes since version 1.01.03 :
+
+o Updated ETHERTYPES.DEF dynamic update.
+o Updated OpenSSL version from 1.1.1u to 1.1.1v.
+o Cosmetic changes.
 
 Changes since version 1.01.02 :
 
