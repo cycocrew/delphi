@@ -55,12 +55,12 @@ UpdatePageURL=https://cycocrew.github.io/devonic/applications.html
 Version=1.02.17
 
 [WCManager]
-DownloadFileURL=https://cycocrew.github.io/devonic/WCManager-1.02.04-Setup.exe
+DownloadFileURL=https://cycocrew.github.io/devonic/WCManager-1.02.05-Setup.exe
 ReadmeFileURL=https://cycocrew.github.io/devonic/WCManager.txt
-DownloadFileURL64=https://cycocrew.github.io/devonic/WCManager-1.02.04-Setup64.exe
+DownloadFileURL64=https://cycocrew.github.io/devonic/WCManager-1.02.05-Setup64.exe
 ReadmeFileURL64=https://cycocrew.github.io/devonic/WCManager.txt
 UpdatePageURL=https://cycocrew.github.io/devonic/applications.html
-Version=1.02.04
+Version=1.02.05
 
 [WFCleaner]
 DownloadFileURL=https://cycocrew.github.io/devonic/WFCleaner-1.00.16-Setup.exe
