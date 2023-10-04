@@ -1,4 +1,4 @@
-Windows Contacts Manager (version 1.02.05)
+Windows Contacts Manager (version 1.02.06)
 Developed by Jean-Fabien Connault (devonic@orange.fr)
 Copyright (c) 2009-2023 Devonic
 
@@ -151,6 +151,11 @@ Installation :
 
 - Execute the application setup executable.
 - Launch the 'Windows Contacts Manager' program from the 'Devonic' program group.
+
+Changes since version 1.02.05 :
+
+o Enhanced postal addresses handling with Google People API.
+o Cosmetic changes.
 
 Changes since version 1.02.04 :
 
