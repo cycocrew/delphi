@@ -7,12 +7,12 @@ UpdatePageURL=https://cycocrew.github.io/devonic/applications.html
 Version=1.00.09
 
 [DEFFileEditor]
-DownloadFileURL=https://cycocrew.github.io/devonic/DEFFileEditor-1.01.04-Setup.exe
+DownloadFileURL=https://cycocrew.github.io/devonic/DEFFileEditor-1.01.05-Setup.exe
 ReadmeFileURL=https://cycocrew.github.io/devonic/DEFFileEditor.txt
-DownloadFileURL64=https://cycocrew.github.io/devonic/DEFFileEditor-1.01.04-Setup64.exe
+DownloadFileURL64=https://cycocrew.github.io/devonic/DEFFileEditor-1.01.05-Setup64.exe
 ReadmeFileURL64=https://cycocrew.github.io/devonic/DEFFileEditor.txt
 UpdatePageURL=https://cycocrew.github.io/devonic/applications.html
-Version=1.01.04
+Version=1.01.05
 
 [FingerprintEditor]
 DownloadFileURL=https://cycocrew.github.io/devonic/FingerprintEditor-1.00.21-Setup.exe
