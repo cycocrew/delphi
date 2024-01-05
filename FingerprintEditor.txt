@@ -1,6 +1,6 @@
-Fingerprint Editor (version 1.00.21)
+Fingerprint Editor (version 1.00.22)
 Developed by Jean-Fabien Connault (devonic@orange.fr)
-Copyright (c) 2009-2023 Devonic
+Copyright (c) 2009-2024 Devonic
 
 [https://cycocrew.github.io/devonic/]
 
@@ -100,6 +100,13 @@ Installation :
 
 - Execute the application setup executable.
 - Launch the 'Fingerprint Editor' program from the 'Devonic' program group.
+
+Changes since version 1.00.21 :
+
+o Enhanced support of SSL fingerprints (JA4).
+o Updated OpenSSL version from 1.1.1u to 1.1.1w.
+o Cosmetic changes.
+o Updated shipping data files.
 
 Changes since version 1.00.20 :
 
