@@ -76,6 +76,11 @@ This file is maintained by Eric Kollmann (xnih13@gmail.com).
 
 [https://raw.githubusercontent.com/xnih/satori/master/fingerprints/browser.xml]
 
+This application uses the SSH.XML file as a SSH fingerprints database.
+This file is maintained by Eric Kollmann (xnih13@gmail.com).
+
+[https://raw.githubusercontent.com/xnih/satori/master/fingerprints/ssh.xml]
+
 This application uses the SSL.XML file as a SSL fingerprints database.
 This file is maintained by Eric Kollmann (xnih13@gmail.com).
 
@@ -103,7 +108,8 @@ Installation :
 
 Changes since version 1.00.21 :
 
-o Enhanced support of SSL fingerprints (JA4).
++ Added support of SSH fingerprints.
+o Enhanced support of SSL fingerprints (JA4+).
 o Updated OpenSSL version from 1.1.1u to 1.1.1w.
 o Cosmetic changes.
 o Updated shipping data files.
