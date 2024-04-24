@@ -1,4 +1,4 @@
-Fingerprint Editor (version 1.00.22)
+Fingerprint Editor (version 1.00.23)
 Developed by Jean-Fabien Connault (devonic@orange.fr)
 Copyright (c) 2009-2024 Devonic
 
@@ -25,12 +25,6 @@ file from the IANA (Internet Assigned Numbers Authority).
 
 [https://www.iana.org/assignments/icmp-parameters/icmp-parameters.txt]
 
-This application uses the VENDORS.DEF file for networking vendors (MA-L)
-MAC addresses identification. This file is generated based on the OUI.CSV
-file from the IEEE (Institute of Electrical and Electronics Engineers).
-
-[https://standards-oui.ieee.org/oui/oui.csv]
-
 This application uses the DHCP.XML file as a DHCP fingerprints database.
 This file is maintained by Eric Kollmann (xnih13@gmail.com).
 
@@ -50,11 +44,6 @@ This application uses the ICMP.XML file as an ICMP fingerprints database.
 This file is maintained by Eric Kollmann (xnih13@gmail.com).
 
 [https://raw.githubusercontent.com/xnih/satori/master/fingerprints/icmp.xml]
-
-This application uses the MAC.XML file as a MAC fingerprints database.
-This file is maintained by Eric Kollmann (xnih13@gmail.com).
-
-[https://raw.githubusercontent.com/xnih/satori/master/fingerprints/mac.xml]
 
 This application uses the NTP.XML file as a NTP fingerprints database.
 This file is maintained by Eric Kollmann (xnih13@gmail.com).
@@ -105,6 +94,13 @@ Installation :
 
 - Execute the application setup executable.
 - Launch the 'Fingerprint Editor' program from the 'Devonic' program group.
+
+Changes since version 1.00.22 :
+
+o Deprecated MAC fingerprints support.
+o Updated OpenSSL version from 1.1.1w to 3.3.0.
+o Cosmetic changes.
+o Updated shipping data files.
 
 Changes since version 1.00.21 :
 
