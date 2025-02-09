@@ -1,6 +1,6 @@
-MP3 Administration Module (version 1.00.32)
+MP3 Administration Module (version 1.00.33)
 Developed by Jean-Fabien Connault (devonic@orange.fr)
-Copyright (c) 2004-2023 Devonic
+Copyright (c) 2004-2025 Devonic
 
 [https://cycocrew.github.io/devonic/]
 
@@ -12,6 +12,12 @@ Installation :
 - Execute the application setup executable.
 - Launch the 'MP3 Administration Module' program from
   the 'Devonic' program group.
+
+Changes since version 1.00.32 :
+
+o Updated OpenSSL version from 1.1.1v to 3.4.0.
+o Cosmetic changes.
+o Updated MP3ARTISTEXCEPTIONS.DEF file.
 
 Changes since version 1.00.31 :
 

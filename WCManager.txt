@@ -1,6 +1,6 @@
-Windows Contacts Manager (version 1.02.07)
+Windows Contacts Manager (version 1.02.08)
 Developed by Jean-Fabien Connault (devonic@orange.fr)
-Copyright (c) 2009-2024 Devonic
+Copyright (c) 2009-2025 Devonic
 
 [https://cycocrew.github.io/devonic/]
 
@@ -151,6 +151,12 @@ Installation :
 
 - Execute the application setup executable.
 - Launch the 'Windows Contacts Manager' program from the 'Devonic' program group.
+
+Changes since version 1.02.07 :
+
+o Enhanced birthday and anniversary dates handling with Google People API.
+o Updated OpenSSL version from 3.3.0 to 3.4.0.
+o Cosmetic changes.
 
 Changes since version 1.02.06 :
 
